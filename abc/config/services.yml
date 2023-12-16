@@ -4,3 +4,8 @@ services:
 
     abc.module_a.your_service:
         class: PrestaShop\Module\Modulea\YourService
+        abstract: true
+
+    abc.child_service:
+        class: PrestaShop\Module\Abc\ChildService
+        parent: abc.module_a.your_service
