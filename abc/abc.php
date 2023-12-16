@@ -1,5 +1,4 @@
 <?php
-//use PrestaShop\Module\Modulea\YourService;
 
 if (!defined('_PS_VERSION_')) {
     exit;
@@ -24,7 +23,7 @@ class Abc extends Module
 
         $this->confirmUninstall = $this->l('Êtes-vous sûr de vouloir désinstaller ?');
 
-        $myService = $this->get('abc.module_a.your_service');
+        $myService = $this->get('abc.child_service');
         $myService->sayHello();
     }
     public function install()
